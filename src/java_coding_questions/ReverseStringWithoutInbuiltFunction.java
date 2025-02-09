@@ -35,5 +35,11 @@ public class ReverseStringWithoutInbuiltFunction {
 		System.out.println(output);
 		sc.close();
 	}
+	
+	/*
+	 * Explanation: This solution manually swaps the characters of the string from the start and
+	end, moving towards the center, effectively reversing the string without using any built-in
+	functions.
+	*/
 
 }
