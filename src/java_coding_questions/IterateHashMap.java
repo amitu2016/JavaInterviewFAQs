@@ -16,18 +16,22 @@ public class IterateHashMap {
 		map.put("Gita", 25);
 		map.put("Sita", 28);
 		
-		//Iterate Using Enhanced for loop
-		for(Map.Entry<String, Integer> entry : map.entrySet()) {
-			System.out.println("Name : "+entry.getKey()+", Age : "+entry.getValue());
+		//Using enhanced for loop
+		for (Map.Entry<String, Integer> entry : map.entrySet()) {
+			String key = entry.getKey();
+			Integer val = entry.getValue();
+			//System.out.println(key +" -> "+ val);
 		}
-				
-		//Iterate using Iterator and While loop
+		
+		//Using Iterator
 		Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();
 		
 		while(iterator.hasNext()) {
 			Map.Entry<String, Integer> entry = iterator.next();
-			System.out.println("Name : "+entry.getKey()+", Age : "+entry.getValue());
+			System.out.println(entry.getKey() +" -> "+ entry.getValue());
 		}
+		
+		
 	}
 
 }
